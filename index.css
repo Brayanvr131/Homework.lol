@@ -8,6 +8,18 @@
   --color-muted: #1e293b;
   --color-muted-foreground: #94a3b8;
   --color-border: rgba(255, 255, 255, 0.1);
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Inter", sans-serif;
+}
+
+:root {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --primary: #38bdf8;
+  --secondary: #1e293b;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --border: rgba(255, 255, 255, 0.1);
 }
 
 @layer base {
@@ -15,6 +27,36 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     margin: 0;
-    font-family: sans-serif;
+    font-family: var(--font-sans);
   }
+}
+
+.glass-header {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-bg {
+  background: rgba(15, 23, 42, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.accent-glow {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+.game-card-bg {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.play-overlay {
+  background: var(--color-primary);
+  color: #000;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 6px 14px;
+  border-radius: 4px;
 }
