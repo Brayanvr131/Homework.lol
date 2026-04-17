@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar.jsx";
 import GameCard from "./components/GameCard.jsx";
 import GamePlayer from "./components/GamePlayer.jsx";
 import gamesData from "./data/games.json";
-import { Badge } from "@/components/ui/badge.jsx";
 import { motion, AnimatePresence } from "motion/react";
 
 const CATEGORIES = ["All", "Classic", "Puzzle", "Arcade", "Action", "Sports"];
@@ -44,30 +43,8 @@ export default function App() {
                   }`}
                 >
                   {category}
-                  {category === "Action" && (
-                    <span className="text-[10px] bg-primary/10 text-primary px-[6px] py-[2px] rounded-[4px] ml-auto">
-                      New
-                    </span>
-                  )}
                 </div>
               ))}
-            </div>
-          </div>
-
-          <div className="mb-[40px]">
-            <span className="text-[11px] uppercase tracking-[1px] text-muted-foreground mb-[20px] block font-semibold">
-              Platform
-            </span>
-            <div className="flex flex-col gap-1">
-              <div className="py-[10px] flex items-center gap-[12px] text-[14px] cursor-pointer opacity-80 hover:opacity-100 hover:text-primary">
-                HTML5
-              </div>
-              <div className="py-[10px] flex items-center gap-[12px] text-[14px] cursor-pointer opacity-80 hover:opacity-100 hover:text-primary">
-                WebGL
-              </div>
-              <div className="py-[10px] flex items-center gap-[12px] text-[14px] cursor-pointer opacity-80 hover:opacity-100 hover:text-primary">
-                Emulator
-              </div>
             </div>
           </div>
         </aside>
