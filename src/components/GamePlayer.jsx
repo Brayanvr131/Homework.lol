@@ -4,8 +4,8 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-} from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
+} from "@/components/ui/dialog.jsx";
+import { Button } from "@/components/ui/button.jsx";
 
 export default function GamePlayer({ game, isOpen, onClose }) {
   if (!game) return null;

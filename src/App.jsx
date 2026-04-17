@@ -1,9 +1,9 @@
 import { useState, useMemo } from "react";
-import Navbar from "./components/Navbar";
-import GameCard from "./components/GameCard";
-import GamePlayer from "./components/GamePlayer";
+import Navbar from "./components/Navbar.jsx";
+import GameCard from "./components/GameCard.jsx";
+import GamePlayer from "./components/GamePlayer.jsx";
 import gamesData from "./data/games.json";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge.jsx";
 import { motion, AnimatePresence } from "motion/react";
 
 const CATEGORIES = ["All", "Classic", "Puzzle", "Arcade", "Action", "Sports"];
