@@ -19,6 +19,9 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, './src'),
       },
     },
+    optimizeDeps: {
+      exclude: ['@google/genai'],
+    },
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
     },
