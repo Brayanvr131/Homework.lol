@@ -3,7 +3,7 @@
 import * as React from "react"
 import { Dialog as DialogPrimitive } from "@base-ui/react/dialog"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils.js"
 import { Button } from "@/components/ui/button.jsx"
 import { XIcon } from "lucide-react"
 
